@@ -54,8 +54,6 @@ resource "aws_instance" "terraform_instance" {
 
 
 
-
-
 //Q.3] Terraform S3 bucket
 
 provider "aws" {
