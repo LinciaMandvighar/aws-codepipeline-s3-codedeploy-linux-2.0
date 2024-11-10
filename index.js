@@ -1,4 +1,4 @@
-puthon
+Q10]puthon
 import json
 def lambda_handler(event, context):
     student_name = "Lincia Mandvighar"
@@ -19,10 +19,11 @@ export const handler = async (event) => {
   return response;
 };
 
-//lambda s3 bucketq9
+
+
+Q.9] S3 Lambda Bucket
+
 import json
-
-
 def lambda_handler(event, context):
     # Extract bucket name and object key from the event
     for record in event['Records']:
@@ -38,5 +39,31 @@ def lambda_handler(event, context):
         'body': json.dumps('Log completed')
     }
 
+
+Q.2] Terraform EC2 instance
+
+provider "aws" {
+access_key = "<YOUR IAM USER ACCESS KEY>"
+secret_key = "<YOUR IAM USER ACCESS SECRET KEY>"
+region  = "ap-south-1"
+}
+resource "aws_instance" "terraform_instance" {
+  ami           = "<AMI KEY>"
+  instance_type = "t2.micro"
+}
+
+
+
+
+
+//Q.3] Terraform S3 bucket
+
+provider "aws" {
+access_key = "<YOUR IAM USER ACCESS KEY>"
+secret_key = "<YOUR IAM USER ACCESS SECRET KEY>"
+region  = "ap-south-1"
+}
+
+resource "aws_s3_bucket" "my_bucket" {}
 
 
